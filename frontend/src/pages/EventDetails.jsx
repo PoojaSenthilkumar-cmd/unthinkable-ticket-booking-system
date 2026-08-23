@@ -83,13 +83,9 @@ function EventDetails() {
           </div>
         </div>
 
-        <button
-          className="btn btn-primary select-seats"
-          type="button"
-          onClick={() => alert('Seat selection will be available soon.')}
-        >
+        <Link className="btn btn-primary select-seats" to={`/events/${id}/seats`}>
           Select Seats
-        </button>
+        </Link>
       </section>
     </main>
   );
